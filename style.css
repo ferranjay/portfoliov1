@@ -1,0 +1,205 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    display: grid;
+    grid-template-areas: 
+      "nav header"
+      "nav article"
+      "ads ads"
+      "frontend frontend"
+      "backend backend"
+      "visualarts visualarts"
+      "footer footer";
+
+    grid-template-rows: 300px;  
+    grid-template-columns: 20% 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+
+/* MAIN STRUCTURE */
+
+  header, footer, article, nav, div {
+    padding: 1.2em;
+    background: white;
+  }
+
+  #pageHeader {
+    grid-area: header;
+    }
+  #pageFooter {
+    grid-area: footer;
+    }
+  #mainArticle { 
+    grid-area: article;     
+    }
+  #mainNav { 
+    grid-area: nav; 
+    }
+  #ads { 
+    grid-area: ads; 
+    } 
+  #frontend {
+    grid-area: frontend;
+  }
+  #backend {
+    grid-area: backend; 
+  }
+  #visualarts {
+    grid-area: visualarts; 
+  }
+
+/* CONTENT WITHIN STRUCTURED ELEMENTS */
+
+    .mainone {
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 0;
+        font-size: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);   
+    }
+
+/* Title Animation */
+    .anim-typewriter{
+        animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 24em;}
+}
+    @keyframes blinkTextCursor{
+        from{border-right-color: rgba(255,255,255,.75);}
+        to{border-right-color: transparent;}
+}
+
+
+    .maintwo {
+        margin-top: 50px;
+        margin-left: 20px;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    
+    #mainleft {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+        float:left;
+        background: white;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        padding: 10px;
+        box-shadow: 1px 2px;
+      }
+      
+    #maincenter {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+        float:left;
+        background: white;
+        margin-top: 50px;
+        margin-left: 50px;
+        padding: 10px;
+        box-shadow: 1px 2px;
+      }
+      
+    #mainright {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+        float:left;
+        background: white;
+        margin-top: 50px;
+        margin-left: 50px;
+        padding: 10px;
+        box-shadow: 1px 2px;
+      }
+
+
+    #mainNav {
+        font-family: 'Barcodefont';
+        font-size:  80px;
+        margin-top: 90px;
+        text-decoration: none;
+    }
+
+    #mainNav ul {
+        margin-top: 60px;
+        padding: 0px;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        list-style-type: none;
+
+    }
+
+    #mainNav ul li a {
+      text-decoration: none;
+    }
+
+
+    #ads {
+        background: url(img/jelly.jpg) no-repeat center center;
+	      background-size: cover;
+	      color: #fff;
+	      -webkit-text-fill-color: transparent;
+	      -webkit-background-clip: text;
+    }
+
+    #ads h1 {
+      font-size: 400px;
+	    font-family: Anton, sans-serif;
+	    text-align: center;
+	    -webkit-transition: text-shadow 1s ease;
+	    text-shadow: 0 0 1px rgba(0,0,0,.1);
+	    margin: 0px;
+	    padding: 50px;
+    }
+
+    #frontend {
+      display: grid;
+      height: 500px;
+    }
+
+
+    #backend {
+      display: grid;
+        height: 500px;
+    }
+
+    #visualarts {
+        display: grid;
+        height: 500px;
+    }
+
+
+
+
+
+
+  /* Stack the layout on small devices/viewports. */
+  @media all and (max-width: 575px) {
+    body { 
+      grid-template-areas: 
+        "header"
+        "article"
+        "ads"
+        "nav"
+        "frontend"
+        "backend"
+        "visualarts"
+        "footer";
+      grid-template-rows: 80px 1fr 70px 1fr 70px;  
+      grid-template-columns: 1fr;
+   }
+  }
