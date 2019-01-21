@@ -5,73 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Rajdhani|Titillium+Web" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
     <title>Ferran Jay</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
 
 <body>
+    <!-- navigation bar-->
+    <header>
+        <nav class="menu">
+            <ul class="menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#design">Design</a>
+                </li>
+                <li>
+                    <a href="#coding">Coding</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <header id="pageHeader">...</header>
+    <!-- landing page -->
 
-
-    <article id="mainArticle">
-        <div class="mainone anim-typewriter">I am a junior webdeveloper, based in The Netherlands, available worldwide.</div>
-        <div class="maintwo">I value simple structures, clean design patterns, and thoughtful interactions. <br>With
-            coding I am a firm believer that simplicity is key and that less is more.</div>
-        <div class="mainthree">
-            <div id="mainleft"><i>Front-End Development.</i><br><br>I tend to code things from scratch, so I know
-                exactly
-                what I am creating. I enjoy bringing ideas to life with code. Attention to detail and a great fan of
-                minimalistic and structured work.</div>
-            <div id="maincenter"><i>Back-End Development.</i><br><br>Creating and maintaining the entire back-end of a
-                system,
-                which consists of the core application logic, databases, data and application integration, API and
-                other back-end processes.</div>
-            <div id="mainright"><i>Visual Arts.</i><br><br>In addition to programming I work as a freelance
-                videographer &
-                editor.<br>I feel that these skills come in handy with the visual aspects of coding. <br><br>
-                Understanding the power of images, colorspectrums and belonging emotions with cinematography can help
-                with the creation of
-                immersive websites.</div>
+    <a name="home"></a>
+    <div class="section-hero">
+        <div class="container">
+            <h3 class="type anim-typewriter">I am a junior webdeveloper, based in The Netherlands, available worldwide.</h3>
+            <p>I value simple structures, clean design patterns, and thoughtful interactions.<br>
+                With coding I am a firm believer that simplicity is key and that less is more.</p>
         </div>
-    </article>
 
-
-    <nav id="mainNav">
         <div class="outer">
             <div class="inner">
                 <label>Ferran Jay</label>
             </div>
         </div>
-        <ul>
-            <!-- Link to every section in the page -->
-            <li><a href="#pageHeader">Home</a></li><br><br>
-            <li><a href="#ads">Front-End Development</a></li><br><br>
-            <li><a href="#backend">Back-End Development</a></li><br><br>
-            <li><a href="#visualarts">Visual Arts</a></li><br><br>
-            <li><a href="#pageFooter">Footer</a></li><br><br>
-        </ul>
-    </nav>
-    <div id="ads">
-        <h1>D E S I G N</h1>
-    </div>
-    <div id="frontend">
-        <h1></h1>
-        <div id="frontleft">HTML/ CSS / Javascript<br>CSS & Javascript Frameworks <br>Responsive design</div>
-        <div id="frontcenter">Version control / Git<br>Testing & Debugging</div>
-        <div id="frontright">Browser development tools<br>Command line</div>
+
+        <div class="main">
+            <div id="mainleft">Strong preference for easy to use websites & creative designs.</div>
+            <div id="maincenter">Fast load times and lag free interaction, a priority of mine.</div>
+            <div id="mainright">My layouts will work on any device.</div>
+        </div>
+
     </div>
 
-    <div id="backend">
-        <h1>Back-End</h1>
-        <div id="backleft"><i>PHP</i><br><br>...</div>
-        <div id="backcenter"><i>My SQL</i><br><br>...</div>
-        <div id="backright"><i>Laraval</i><br><br>...</div>
+
+    <!-- about section -->
+
+    <a name="about"></a>
+    <div id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+
+                <div id="aboutleft">Front-End Development.<br><br>I tend to code things from scratch, so I know
+                    exactly
+                    what I am creating. I enjoy bringing ideas to life with code. Attention to detail and a great fan
+                    of
+                    minimalistic and structured work.</div>
+                <div id="aboutcenter">Back-End Development.<br><br>Creating and maintaining the entire back-end of a
+                    system,
+                    which consists of the core application logic, databases, data and application integration, API and
+                    other back-end processes.</div>
+                <div id="aboutright">Visual Arts.<br><br>In addition to programming I work as a freelance
+                    videographer &
+                    editor.<br>I feel that these skills come in handy with the visual aspects of coding. <br><br>
+                    Understanding the power of images, colorspectrums and belonging emotions with cinematography can
+                    help
+                    with the creation of
+                    immersive websites.</div>
+            </div>
+
+        </div>
     </div>
-    <div id="visualarts">Visual Arts</div>
-    <footer id="pageFooter">Footer</footer>
+    </div>
+
+    <!-- design section       -->
+
+
+    <div id="design" class="section">
+        <div class="container">
+            <h1>
+
+            </h1>
+        </div>
+    </div>
+
+
+    <!-- coding section -->
+    <a name="coding"></a>
+    <div id="coding" class="section">
+        <div class="container">
+            <div class="coding-content">
+                <div>
+                     <h2>Front-end</h2>
+                     <p>HTML/CSS.<br>JavaScript/jQuery.<br>
+                        CSS and JavaScript Frameworks & CSS Preprocessing. <br>
+                        Version Control/Git. <br>
+                        Responsive Design. <br>
+                        Testing/Debugging. <br>
+                        Browser Developer Tools.</p>
+                
+                </div>
+                <div>
+                    <h2>Back-end</h2>
+                    <p>As Back-end developer I am able to work in parallel with front-end developers, setting
+                        server logic to external elements of the web application. In order to implement this logic, I use server-side
+                        scripting languages, such as PHP. In addition to the implementation of service logic, the optimization of
+                        the application (improving its speed and efficiency) is part of my work as a back-end developer. Moreover, I
+                        often face the task of creating a solution for storing large amounts of information in application databases.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <a name="contact"></a>
+    <div id="contact" class="section">
+        <div class="container">
+            <h3>Interested in my work?</h3>
+            <p>Leave your details behind and I will contact you.</p>
+            <input type="text" placeholder="Enter your name">
+            <input type="text" placeholder="Enter your number">
+            <input type="submit" value="Submit">
+            <br>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <span>
+            Ferran Jay &copy; 2019
+        </span>
+    </footer>
 
     <script src="main.js"></script>
 </body>
